@@ -1,0 +1,28 @@
+/* @import "~bootstrap/dist/css/bootstrap.css"; */
+
+#general{
+    background-image: url(../images/top-headlines-news-themem-background_1017-14199.jpg);
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    
+    text-align: center;
+    padding-bottom: 10px;
+    
+
+}
+
+#general, h3{
+   text-align: center;
+}
+
+#shadow{
+    box-shadow: 10px -1px 5px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px -1px 5px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px -1px 5px -10px rgba(0,0,0,0.75);
+}
+
+
+#try h3{
+background-image: url(../images/top-headlines-news-themem-background_1017-14199.jpg);
+}
