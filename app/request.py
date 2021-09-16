@@ -92,10 +92,10 @@ def process_articles_results(articles_list):
     Function  that processes the movie result and transform them to a list of Objects
 
     Args:
-        movie_list: A list of dictionaries that contain movie details
+        article_list: A list of dictionaries that contain news details
 
     Returns :
-        movie_results: A list of movie objects
+        article_results: A list of article objects
     '''
     article_results = []
     for article_item in articles_list:
