@@ -33,7 +33,7 @@ This is an application that consumes an API, in this case, a news API. It allows
 #### Prerequisites
  These are list of things you need to use the software and how to install them.
  Install packages with
-#### pip: -r requirements.txt
+#### pip -r requirements.txt
 
 
 
