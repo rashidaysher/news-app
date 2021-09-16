@@ -11,7 +11,7 @@
 
 
 ### Project Description
-<img scr = 'app/static/images/Screenshot from 2021-09-15 23-32-35.jpg' >
+<img src = "app/static/images/Screenshot from 2021-09-15 23-32-35.jpg" >
 
 This is an application that consumes an API, in this case, a news API. It allows a user watch news from all sources in any language,It is a way of getting up to date with what they have missed earlier. News can be gotten from any news source all around, different types of news as well from business to breaking news to entertainment.
 
