@@ -11,6 +11,9 @@ class Config:
 
     
 class ProdConfig(Config):
+    """
+     Class that configures production
+    """
 
     pass
 
