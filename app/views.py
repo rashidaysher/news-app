@@ -9,7 +9,7 @@ from .request import get_articles, get_sources
 def index():
 
     '''
-    View root page function that returns the index page and its data
+    View root page function that returns the index page and it's data
     '''
     general_sources = get_sources('general')
     news_business = get_sources('business')
@@ -48,7 +48,7 @@ def source(id):
 def article(id):
 
     '''
-    View movie page function that returns the movie details page and its data
+    View news page function that returns the news details page and its data
     '''
     article = get_articles(id)
     title = f'{id}'
