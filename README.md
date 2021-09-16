@@ -1,6 +1,6 @@
-<h3> The News Application</h3
+                                  <h3> The News Application</h3
 
-  Developed by: Aisha Rashid
+                                  Developed by: Aisha Rashid
 
 
 
