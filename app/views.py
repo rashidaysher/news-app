@@ -36,7 +36,7 @@ def artcicles(source_id):
 def source(id):
 
     '''
-    View movie page function that returns the movie details page and its data
+    View source page function that returns the movie details page and its data
     '''
     source = get_sources(id)
     title = f'{source.title}'
