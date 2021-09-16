@@ -89,7 +89,7 @@ def get_articles(id):
 
 def process_articles_results(articles_list):
     '''
-    Function  that processes the movie result and transform them to a list of Objects
+    Function  that processes the news result and transform them to a list of Objects
 
     Args:
         article_list: A list of dictionaries that contain news details
