@@ -1,11 +1,11 @@
-from app.models import articles
+
 from flask import render_template
-from app import app
-from .request import get_articles, get_sources
+from . import main
+from ..request import get_articles, get_sources
 
 
 # Views
-@app.route('/')
+@main.route('/')
 def index():
 
     '''
@@ -19,11 +19,11 @@ def index():
     health_sources = get_sources('health')
     sports_sources = get_sources('sports')
     # print(general_news)
-    title = 'Home - Welcome to The best News Review Website Online'
+    title = 'Home - Welcome to The latest News Review Website Online'
     return render_template('index.html', title = title,general = general_sources,business=news_business,technology =technology_sources,enternainment= entertainment_sources,sports =sports_sources,science = science_sources,health= health_sources)
 
 
-@app.route('/source/<source_id>')
+@main.route('/source/<source_id>')
 def artcicles(source_id):
 
     '''
@@ -32,7 +32,7 @@ def artcicles(source_id):
     
     return render_template('index.html',id = source_id)
 
-@app.route('/source/<int:id>')
+@main.route('/source/<int:id>')
 def source(id):
 
     '''
@@ -44,7 +44,7 @@ def source(id):
     return render_template('news.html',title = title,source= source)    
 
 
-@app.route('/articles/<id>')
+@main.route('/articles/<id>')
 def article(id):
 
     '''

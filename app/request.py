@@ -1,21 +1,28 @@
-
-
-from app import app
 import urllib.request,json
-from app.models.sources import Sources
-from app.models.articles import Articles
+from .models import Sources, Articles
+# import ssl
+
+# ssl._create_default_https_context= ssl._create_unverified_context
 
 Source = Sources
 
 Article = Articles
 
-#getting api key
-api_key = app.config['SOURCE_API_KEY']
+api_key= None
 
-#news base url
-news_sources_url = app.config["NEWS_SOURCES_API_BASE_URL"]
+news_sources_url = None
 
-articles_url =app.config['EVERYTHING_SOURCE_API_URL']
+articles_url = None
+
+def configure_request(app):
+    global api_key, news_sources_url, articles_url  
+
+    api_key = app.config['SOURCE_API_KEY']
+
+    #news base url
+    news_sources_url = app.config["NEWS_SOURCES_API_BASE_URL"]
+
+    articles_url =app.config['EVERYTHING_SOURCE_API_URL']
 
 def get_sources(category):
     '''
